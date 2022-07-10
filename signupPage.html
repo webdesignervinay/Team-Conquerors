@@ -5,18 +5,20 @@
     <title>Document</title>
     <style>
         
-          
+          body{
+            background-color: #17A589;
+          }
         
         h1{
-            margin-top: 100px;
+            padding: 15px;
         }
         #container{
-            height: 500px;
+            height: 450px;
             width: 400px;
             margin: auto;
             /* border: 1px solid red; */
             background-color: grey;
-            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
            margin: auto;
             text-align: center;
         }
@@ -54,17 +56,48 @@
         }
         
            
-        #container>div{
-            background-color: red;
+        button {
+            cursor: pointer;
         }   
+        div#container {
+            background-color: #48C9B0;
+        }
+        
+        input {
+            padding: 10px;
+        }
+        
+        button#sig {
+            background-color: #17A589;
+            margin: 15px 0px 0px 0px;
+        }
+        button#sig {
+            width: 80%;
+        }
+        
+        input#Pass {
+            margin-top: 15px;
+        }
+        
+        input#name {
+            margin-bottom: 15px;
+        }
+        
+      
+        
+       
+        
+      
 
 
     </style>
 </head>
 <body>
     
+   <div id="main">
     <div id="container">
-        <h1>Singup</h1>
+        <div><h1>Singup</h1></div>
+        
         <input id="name" type="text" placeholder="Full name" >
         <input id="email" type="text" placeholder="Email" >
         <input id="Pass" type="text" placeholder="Passward" >
@@ -72,5 +105,6 @@
         <button id="sig" >LOGIN</button>
        
     </div>
+   </div>
 </body>
 </html>
